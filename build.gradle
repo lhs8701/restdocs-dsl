@@ -37,6 +37,8 @@ publishing {
 
 
 dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+
     //restdoc
     implementation 'org.springframework.restdocs:spring-restdocs-mockmvc:3.0.0'
     implementation 'org.springframework.boot:spring-boot-starter'
