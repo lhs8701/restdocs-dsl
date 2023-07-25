@@ -17,6 +17,14 @@ public interface ApiDocumentUtils {
     }
 
     static OperationResponsePreprocessor documentResponse() {
-        return preprocessResponse(prettyPrint());
+        return preprocessResponse(
+                modifyHeaders().remove("Vary"),
+                modifyHeaders().remove("X-Content-Type-Options"),
+                modifyHeaders().remove("X-XSS-Protection"),
+                modifyHeaders().remove("Cache-Control"),
+                modifyHeaders().remove("Pragma"),
+                modifyHeaders().remove("Expires"),
+                modifyHeaders().remove("X-Frame-Options"),
+                prettyPrint());
     }
 }

@@ -4,6 +4,7 @@ import hansol.restdocsdsl.element.FieldElement;
 import org.springframework.restdocs.payload.FieldDescriptor;
 import org.springframework.restdocs.payload.PayloadDocumentation;
 import org.springframework.restdocs.payload.RequestFieldsSnippet;
+import org.springframework.restdocs.snippet.Attributes;
 
 import java.util.ArrayList;
 import java.util.List;

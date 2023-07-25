@@ -51,7 +51,7 @@ public class RestDocsAdapter {
                 snippets[i] = snippet;
             }
             else{
-                throw new RuntimeException("잘못된 RestDocs DSL 문법입니다.");
+                throw new RuntimeException("잘못된 DSL 문법입니다.");
             }
         }
 
