@@ -7,6 +7,8 @@ public class FieldElement {
     private String description;
     private JsonFieldType type;
     private Boolean optional;
+    private String defaultValue;
+    private String constraints;
 
 
     public FieldElement(String name) {
@@ -32,6 +34,16 @@ public class FieldElement {
         return this;
     }
 
+    public FieldElement defaultValue(String value) {
+        this.defaultValue = value;
+        return this;
+    }
+
+    public FieldElement constraints(String constraints) {
+        this.constraints = constraints;
+        return this;
+    }
+
     public String getName() {
         return name;
     }
@@ -46,5 +58,13 @@ public class FieldElement {
 
     public Boolean getOptional() {
         return optional;
+    }
+
+    public String getDefaultValue() {
+        return defaultValue;
+    }
+
+    public String getConstraints() {
+        return constraints;
     }
 }

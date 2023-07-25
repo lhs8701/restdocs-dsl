@@ -11,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockMultipartFile;
+import org.springframework.restdocs.payload.JsonFieldType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
@@ -70,8 +71,8 @@ public class DocsTest {
         actions.andExpect(status().isOk())
                 .andDo(docs("request-field",
                         requestFields(
-                                field("nickname").description("이름"),
-                                field("address").description("주소")
+                                field("nickname").type(JsonFieldType.STRING).description("이름").defaultValue("익명의 사용자"),
+                                field("address").description("주소").type(JsonFieldType.STRING).optional().constraints("도로명 주소 형식")
                         )));
     }
 

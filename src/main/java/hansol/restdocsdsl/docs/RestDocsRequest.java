@@ -34,6 +34,12 @@ public class RestDocsRequest extends DocsRoot{
             if (member.getType() != null){
                 fieldDescriptor.type(member.getType());
             }
+            if (member.getDefaultValue() != null) {
+                fieldDescriptor.attributes(new Attributes.Attribute("defaultValue", member.getDefaultValue()));
+            }
+            if (member.getConstraints() != null) {
+                fieldDescriptor.attributes(new Attributes.Attribute("constraints", member.getConstraints()));
+            }
             fieldDescriptors.add(fieldDescriptor);
         }
         return PayloadDocumentation.requestFields(fieldDescriptors);
