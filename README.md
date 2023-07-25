@@ -4,7 +4,7 @@ RestDocs를 DSL화하여 사용하기 쉽도록 만들었습니다.
 
 ## Gradle
 ```groovy
-implementation 'org.hansol:restdocs-dsl:[VERSION]'
+implementation 'io.github.lhs8701:restdocs-dsl:1.2.0'
 ```
 
 ## 주요 특징
