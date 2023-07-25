@@ -1,0 +1,15 @@
+ext {
+    PUBLISH_GROUP_ID = 'io.github.lhs8701'
+    PUBLISH_VERSION = '1.2.0'
+    PUBLISH_ARTIFACT_ID = 'restdocs-dslized-library'
+    PUBLISH_DESCRIPTION = 'RestDocs DSLized Library'
+    PUBLISH_URL = 'https://github.com/lhs8701/restdocs-dsl'
+    PUBLISH_LICENSE_NAME = 'GNU General Public License v3.0'
+    PUBLISH_LICENSE_URL = 'https://github.com/lhs8701/restdocs-dsl/blob/main/LICENSE'
+    PUBLISH_DEVELOPER_ID = 'hansol'
+    PUBLISH_DEVELOPER_NAME = 'HANSOL LEE'
+    PUBLISH_DEVELOPER_EMAIL = 'hansol8701@naver.com'
+    PUBLISH_SCM_CONNECTION = 'scm:git:github.com/lhs8701/restdocs-dsl.git'
+    PUBLISH_SCM_DEVELOPER_CONNECTION = 'scm:git:ssh://github.com/lhs8701/restdocs-dsl.git'
+    PUBLISH_SCM_URL = 'https://github.com/lhs8701/restdocs-dsl'
+}
