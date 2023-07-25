@@ -14,7 +14,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'org.hansol'
             artifactId = 'restdocs-dsl'
-            version = '1.0.0'
+            version = '1.0.4'
             from components.java
 
             pom {

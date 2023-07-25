@@ -3,7 +3,7 @@ package hansol.restdocsdsl.element;
 public class HeaderElement {
     private final String name;
     private String description;
-    private boolean optional;
+    private Boolean optional;
 
     public HeaderElement(String name) {
         this.name = name;
@@ -31,7 +31,7 @@ public class HeaderElement {
         return description;
     }
 
-    public boolean isOptional() {
+    public Boolean isOptional() {
         return optional;
     }
 }
