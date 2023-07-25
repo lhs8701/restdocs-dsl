@@ -1,11 +1,23 @@
 # Restdocs DSL
 RestDocs를 DSL화하여 사용하기 쉽도록 만들었습니다.
 
+<br>
 
-## Gradle
+## Dependency
+### Gradle
 ```groovy
 implementation 'io.github.lhs8701:restdocs-dsl:1.2.0'
 ```
+### Maven
+```xml
+<dependency>
+  <groupId>io.github.lhs8701</groupId>
+  <artifactId>restdocs-dslized-library</artifactId>
+  <version>1.2.0</version>
+</dependency>
+```
+
+<br>
 
 ## 주요 특징
 - **Auto Pretty Print** : 예시의 JSON 데이터를 가시적으로 보여줍니다. 
@@ -13,6 +25,8 @@ implementation 'io.github.lhs8701:restdocs-dsl:1.2.0'
 - **Default Value Attribute** : 필드의 기본 값을 명시할 수 있는 메서드를 지원합니다.  
 - **Constraints Attribute** : 필드의 제약 조건을 명시할 수 있는 메서드를 지원합니다.  
 - **Simple Format** : 작성해야 하는 코드 양이 적고, 쉽게 사용할 수 있습니다.  
+
+<br>
 
 ## 사용법
 ### Header
