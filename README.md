@@ -28,7 +28,9 @@ implementation 'io.github.lhs8701:restdocs-dsl:1.2.0'
 
 <br>
 
-## 사용법
+## 사용 예시
+> 자세한 사용법은 Wiki를 참조해주세요
+
 ### Header
 ```java
 import static hansol.restdocsdsl.docs.RestDocsAdapter.docs;
