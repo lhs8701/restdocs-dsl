@@ -10,7 +10,7 @@ import java.util.List;
 import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
 import static org.springframework.restdocs.request.RequestDocumentation.pathParameters;
 
-public class RestDocsPathParam extends DocsRoot{
+public class RestDocsPathParam implements Docable {
     private final ParamElement[] paramElements;
 
     public static RestDocsPathParam pathParams(ParamElement... paramElements) {

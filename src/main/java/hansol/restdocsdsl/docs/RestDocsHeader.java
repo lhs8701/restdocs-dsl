@@ -4,15 +4,13 @@ import hansol.restdocsdsl.element.HeaderElement;
 import org.springframework.restdocs.headers.HeaderDescriptor;
 import org.springframework.restdocs.headers.HeaderDocumentation;
 import org.springframework.restdocs.headers.RequestHeadersSnippet;
-import org.springframework.restdocs.request.ParameterDescriptor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.springframework.restdocs.headers.HeaderDocumentation.headerWithName;
-import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
 
-public class RestDocsHeader extends DocsRoot {
+public class RestDocsHeader implements Docable {
 
     private final HeaderElement[] headerElements;
 
@@ -28,10 +26,10 @@ public class RestDocsHeader extends DocsRoot {
         List<HeaderDescriptor> headerDescriptors = new ArrayList<>();
         for (HeaderElement member : headerElements) {
             HeaderDescriptor headerDescriptor = headerWithName(member.getName());
-            if (member.getDescription() != null){
+            if (member.getDescription() != null) {
                 headerDescriptor.description(member.getDescription());
             }
-            if (member.isOptional() != null){
+            if (member.isOptional() != null) {
                 headerDescriptor.optional();
             }
             headerDescriptors.add(headerDescriptor);

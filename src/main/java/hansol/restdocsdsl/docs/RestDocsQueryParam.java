@@ -10,7 +10,7 @@ import java.util.List;
 import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
 import static org.springframework.restdocs.request.RequestDocumentation.queryParameters;
 
-public class RestDocsQueryParam extends DocsRoot{
+public class RestDocsQueryParam implements Docable {
     private final ParamElement[] paramElements;
 
     public RestDocsQueryParam(ParamElement[] paramElements) {

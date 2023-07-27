@@ -12,7 +12,7 @@ import java.util.List;
 
 import static org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath;
 
-public class RestDocsRequestPartField extends DocsRoot {
+public class RestDocsRequestPartField implements Docable {
     private final String partName;
     private final FieldElement[] fieldElements;
 

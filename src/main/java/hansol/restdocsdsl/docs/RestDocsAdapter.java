@@ -9,19 +9,19 @@ import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.docu
 
 
 public class RestDocsAdapter {
-    public static RestDocumentationResultHandler docs(String name, DocsRoot... docsRoots) {
+    public static RestDocumentationResultHandler docs(String name, Docable... docables) {
         return document(name,
                 documentRequest(),
                 documentResponse(),
-                castToSnippet(docsRoots)
+                castToSnippet(docables)
         );
     }
 
-    static Snippet[] castToSnippet(DocsRoot... docsRoots) {
-        Snippet[] snippets = new Snippet[docsRoots.length];
+    static Snippet[] castToSnippet(Docable... docables) {
+        Snippet[] snippets = new Snippet[docables.length];
 
-        for (int i = 0; i < docsRoots.length; i++) {
-            DocsRoot elem = docsRoots[i];
+        for (int i = 0; i < docables.length; i++) {
+            Docable elem = docables[i];
             if (elem instanceof RestDocsHeader) {
                 Snippet snippet = ((RestDocsHeader) elem).toSnippets();
                 snippets[i] = snippet;

@@ -10,7 +10,7 @@ import java.util.List;
 
 import static org.springframework.restdocs.request.RequestDocumentation.partWithName;
 
-public class RestDocsRequestPart extends DocsRoot{
+public class RestDocsRequestPart implements Docable {
     private final PartElement[] partElements;
 
     public RestDocsRequestPart(PartElement[] partElements) {
