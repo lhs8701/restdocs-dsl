@@ -6,7 +6,7 @@ RestDocs를 DSL화하여 사용하기 쉽도록 만들었습니다.
 ## Dependency
 ### Gradle
 ```groovy
-implementation 'io.github.lhs8701:restdocs-dsl:1.2.0'
+implementation 'io.github.lhs8701:restdocs-dslized-library:1.2.1'
 ```
 ### Maven
 ```xml
